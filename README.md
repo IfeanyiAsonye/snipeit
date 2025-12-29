@@ -85,11 +85,5 @@ To remove volumes (destroy data): `docker volume rm <volume_name>`
 - "App won't start": check `docker compose logs app` and ensure `db` is healthy.
 - "Database connection refused": verify `.env` DB credentials and check `docker compose logs db`.
 - "Port in use": change `APP_PORT` in `.env` or stop the conflicting service.
-
----
-
-## Contributing & Notes
-- If you want, I can add a `docker-compose.override.yml` for local dev, or create a `.env.example` file without secrets.
-
 ---
 
